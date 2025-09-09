@@ -17,8 +17,8 @@
   const step3Values = [10, 26, 63];
 
   const initialValues2 = [0, 0, 0];
-  const updatedValues2 = [18, 28, 50];
-  const step3Values2 = [12, 14, 30];
+  const updatedValues2 = [73, 21, 6];
+  const step3Values2 = [53, 33, 14];
 
   const barStores1 = initialValues.map(() =>
     tweened(0, { duration: 800, easing: cubicOut }),
@@ -95,23 +95,24 @@
       {#key stage}
         {#if stage === 1}
           <div class="overlay-text" transition:fade>
+            <h2>2022</h2>
             <p>
               In November 2022, roughly a quarter of people surveyed thought
-              crime was a pretty big problem where they lived.
+              crime was a serious problem where they lived.
             </p>
           </div>
         {:else if stage === 2}
           <div class="overlay-text" transition:fade>
-            <p>
-              Nationally, perceptions of crime were higher — but still lower
-              than expected.
-            </p>
+            <h2>2022</h2>
+            <p>Nationally, perceptions of crime were much higher.</p>
           </div>
         {:else if stage === 3}
           <div class="overlay-text" transition:fade>
+            <h2>2024</h2>
             <p>
-              By 2025, concern about crime dropped even further in both local
-              and national contexts.
+              When polled again in 2024, concern about crime dropped in both
+              local and national contexts, but voters continued to think crime
+              was more of a problem nationally than in their neighborhood.
             </p>
           </div>
         {/if}
@@ -186,7 +187,6 @@
     width: 100%;
     height: 350px;
     z-index: 10;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
@@ -249,7 +249,7 @@
 
   .bar {
     height: 30px;
-    background-color: #3498db;
+    background-color: #066976;
     color: white;
     display: flex;
     align-items: center;
